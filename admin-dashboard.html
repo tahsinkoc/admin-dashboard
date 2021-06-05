@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="dashboard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Panel</title>
+</head>
+<body>
+    <div class="op-box">
+        <div class="opsucces" id="op-s">
+            <h1 class="ops-title" id="ops-title"></h1>
+            <div class="load-bar" id="load-bar"></div>
+        </div>
+    </div>
+    <div class="content">
+        <input type="checkbox" name="" id="check">
+        <div class="left-dash-bar" id="left-dash-bar">
+            <div class="dash-title">
+                <div class="meu-logo">
+                    <img src="img/mersin-universitesi-logo.png" alt="" srcset="">
+                </div>
+                <div class="user-box">
+                    <h2 id="user">
+                        Tahsin KOÇ
+                    </h2>
+                </div>
+            </div>
+            <div class="left-dash-content">
+                <div class="item active">
+                    <div class="icon">
+                        <i class="far fa-newspaper"></i>
+                    </div>
+                    <h2 class="item-name">Haberler</h2>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="far fa-bell"></i>
+                    </div>
+                    <h2 class="item-name">Duyurular</h2>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h2 class="item-name">Öğrenci</h2>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h2 class="item-name">Otomasyon</h2>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h2 class="item-name">İlanlar</h2>
+                </div>
+            </div>
+            <div class="dash-bottom">
+                <label for="opn-settings" class="set-box bo-box" id="set-box">
+                    <i class="fas fa-users-cog"></i>
+                </label>
+                <div class="logout-box bo-box">
+                    <i class="fas fa-sign-out-alt"></i>
+                </div>
+            </div>
+            <input type="checkbox" name="" id="opn-settings">
+            <div class="user-settings">
+                <a href="#for-sc">
+                    <div class="set-item item1 set-active" id="set-ac">
+                        <p><i class="fas fa-user-plus"></i> Kullanıcı Ekle/Sil</p>
+                    </div>
+                </a>
+               <a href="#change-user-inf">
+                    <div class="set-item item2">
+                        <p> <i class="fas fa-user-tie"></i> Kullanıcı Bilgilerini Düzenle</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="dash-content news">
+            <label class="bar" id="bar" for="check"><i class="fas fa-bars"></i></label>
+            <div class="container">
+                <input type="checkbox" id="add-new" style="display: none;">
+               <div class="form-box">
+                  <div class="fomr-top">
+                    <h3 class="title-o">Haberler</h3>
+                    <label for="add-new" class="add-new">+ HABER EKLE</div>
+                        <div class="form-flex">
+                            <form action="">
+                                <div class="inputs">
+                                    <h3 class="c-title">Haber Başlığı</h3>
+                                    <input id="new-title" type="text" class="new-title" placeholder="Haber Başlığı...">
+                                </div>
+                                <div class="inputs">
+                                    <h3 class="c-title">Haber İçeriği</h3>
+                                    <textarea name="" class="new-content" id="new-content" placeholder="Haber İçeriği..."></textarea>
+                                </div>
+                                <div class="inputs">
+                                    <h3 class="c-title">Resim Yükle</h3>
+                                    <label for="new-img" class="img-table">
+                                        <i class="fas fa-file-image"></i>
+                                    </label>
+                                    <input type="file" class="upl-img" id="new-img" accept="image/x-png,image/jpeg"/>
+                                </div>
+                                <div class="inputs">
+                                    <button class="publish" id="publish-new" type="submit">YAYINLA</button>
+                                </div>
+                            </form>
+                        </div>
+                  </div>
+               </div>
+                <div class="new-table">
+                    <table class="new-content-table" id="new-content-table">
+                        <tr class="tab-top">
+                          <th>ID</th>
+                          <th>Haber Başlığı</th>
+                          <th>Yayınlanma Tarihi</th>
+                          <th id="edit">Düzenle</th>
+                        </tr>
+                        <tr>
+                          <td>HB</td>
+                          <td>İlk Haber</td>
+                          <td>9.05.2021</td>     
+                          <td>
+                             <div class="edit">
+                                 <div class="edit-new pan-new">
+                                    <i class="far fa-edit"></i>
+                                 </div> 
+                                 <div class="remove-new pan-new">
+                                    <i class="fas fa-trash-alt"></i>
+                                 </div> 
+                                </div>
+                          </td>
+                        </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>                          
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div> 
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div> 
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div> 
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div>  
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div> 
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div> 
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div> 
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>HB</td>
+                            <td>İlk Haber</td>
+                            <td>9.05.2021</td>
+                            <td>
+                               <div class="edit">
+                                   <div class="edit-new pan-new">
+                                      <i class="far fa-edit"></i>
+                                   </div> 
+                                   <div class="remove-new pan-new">
+                                      <i class="fas fa-trash-alt"></i>
+                                   </div> 
+                                  </div>
+                            </td>
+                          </tr>
+                      </table>
+                </div>
+                <div class="info-box">
+                    <div class="info-new">
+                        <h2 class="info-count">Yayınlanan Haber Sayısı</h2>
+                        <span class="count-val">0</span>
+                    </div>
+                </div>
+             <div class="user-set-cont" id="set-cont">
+                 <div class="form-chng" id="add-user-box">
+                    <form action="">
+                        <div class="inputs">
+                            <h3 class="c-title">Kullanıcı Adı</h3>
+                            <input id="add-username" type="text" class="new-title" placeholder="Kullanıcı Adı...">
+                        </div>
+                        <div class="inputs">
+                            <h3 class="c-title">Kullanıcı Şifresi</h3>
+                            <input id="add-password type="password" class="new-title" placeholder="Şifre..."> 
+                        </div>
+                        <div class="inputs">
+                            <button class="publish" id="add-user" type="submit">EKLE</button>
+                        </div>
+                    </form>
+                 </div>
+
+                 <!--Kullanıcı Bilgilerini Düzenle-->
+                 <div class="for-sc" id="for-sc"></div>
+                 <div class="form-chng" id="change-user-inf">
+                    <form action="">
+                        <div class="inputs">
+                            <h3 class="c-title">Kullanıcılar</h3>
+                            <select name="" id="user-output" style="width: 100%;">
+                                <option value="0">Select Admin</option>
+                                <option id="ad-1" value="1">User #1</option>
+                                <option id="ad-2" value="1">User #2</option>
+                                <option id="ad-3" value="1">User #3</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <h3 class="c-title">Yeni Kullanıcı Adı</h3>
+                            <input id="change-username" type="text" class="new-title" placeholder="Kullanıcı Adı...">
+                        </div>
+                        <div class="inputs">
+                            <h3 class="c-title">Yeni Kullanıcı Şifresi</h3>
+                            <input id="change-password type="password" class="new-title" placeholder="Şifre..."> 
+                        </div>
+                        <div class="inputs">
+                            <button class="publish" id="change-user" type="submit">EKLE</button>
+                        </div>
+                    </form>
+                 </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/283b6e5fc0.js" crossorigin="anonymous"></script>
+</body>
+</html>
